@@ -1,0 +1,30 @@
+{
+  "name": "bwlab/demounittest",
+  "description": "Demo Unit Test",
+  "homepage": "https://www.bwlab.it",
+  "license": "free",
+  "type": "prestashop-module",
+  "authors": [
+    {
+      "name": "Luigi Massa",
+      "email": "lmassa@bwlab.it"
+    }
+  ],
+  "minimum-stability": "dev",
+  "config": {
+    "preferred-install": "dist",
+    "vendor-dir": "vendor/",
+    "prepend-autoloader": false
+  },
+  "autoload": {
+    "psr-4": {
+      "Demo\\UnitTest\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require-dev": {
+    "mockery/mockery": "^1.4@dev",
+    "phpunit/phpunit": "8.5.x-dev",
+    "symfony/dom-crawler": "5.4.x-dev"
+  }
+}
